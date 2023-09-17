@@ -4,6 +4,63 @@ You will need to get an API key from TMDB: https://developers.themoviedb.org/3/g
 
 --------------------
 
+## Details
+
+This website is a frontend for <https://www.themoviedb.org/>'s API. It allows a user to search for movies and shows and view information about them. It also displays a list of trending, popular, and upcoming movies.
+
+## Key Features
+
+- Displays popular, trending, top rated movies and shows.
+- Search movies and shows using the searchbox.
+- Show movie details such as description, cast, trailers, release date and rating
+- Filter movies and shows by genres
+
+## Key Parts
+
+It is comprised of the following parts
+
+### Pages
+
+(To be done...)
+
+
+### Components
+
+React Components Include:
+
+(To be done....)
+
+
+## Installation Instructions
+
+To run this project locally, you will need to do the following:
+
+1. Clone the repository `https://github.com/m-zia/TR-Project-Movies/`
+2. Install the dependencies via: `npm install`
+3. create a .env file in the root directory which takes one entry
+   - REACT_APP_API_KEY = `YOUR_API_KEY_HERE`
+4. Run the project via: `npm start`
+
+
+## Roadmap
+
+- [x] Show trending movies and TV shows
+- [x] Implement Search Movies functionality
+- [x] Implement Search Shows functionality
+- [x] Display movie details along with cast
+- [x] Filter movies by genres
+- [x] Filter shows by genres
+- [x] Display the rating and year for TV shows
+- [x] Display the rating and year for Movies
+- [x] Display TV show details
+- [x] Display movie details
+- [x] Pagination to load content 
+- [x] General page responsiveness
+- [ ] Adding TypeScript?
+- [ ] Adding tests?
+
+
+---------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
