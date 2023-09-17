@@ -56,8 +56,10 @@ To run this project locally, you will need to do the following:
 - [x] Display movie details
 - [x] Pagination to load content 
 - [x] General page responsiveness
-- [ ] Adding TypeScript?
-- [ ] Adding tests?
+- [ ] Adding TypeScript
+- [ ] Adding tests
+- [ ] Dark Mode / Light Mode theme switcher?
+
 
 
 ---------------------
