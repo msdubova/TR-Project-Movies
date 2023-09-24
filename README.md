@@ -21,14 +21,22 @@ It is comprised of the following parts
 
 ### Pages
 
-(To be done...)
-
+- Trending
+- Movies
+- TV Shows
+- Search
 
 ### Components
 
 React Components Include:
 
-(To be done....)
+- Carousel -> Displays the cast members of the movie / show for the modal
+- ContentModal -> Opens the modal when a user clicks on a movie / show
+- Genres -> Allows the user to filter movies / shows by genre and updates the UI accordingly
+- Header -> Displays the name of the project
+- MainNav -> Displays the main navigation bar that allows the user to go to different parts of our applciation
+- CustomPagination -> Displays the pagination icons and allows the user to go to the next page and see more movies / shows
+- SingleContent -> Displays the poster, rating, title and release date for our individual movies and shows
 
 
 ## Installation Instructions
@@ -58,7 +66,7 @@ To run this project locally, you will need to do the following:
 - [x] General page responsiveness
 - [ ] Adding TypeScript
 - [ ] Adding tests
-- [ ] Dark Mode / Light Mode theme switcher?
+- [ ] Dark Mode / Light Mode theme switcher (very low priority)
 
 
 
