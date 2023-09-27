@@ -5,12 +5,15 @@ import sequelize from './config/sequelize'; // Import Sequelize instance
 import mediaRoutes from './routes/MediaRoutes';
 // import Media from './models/Media'; // Define Models
 // import { fetchDataAndPopulateDatabase } from './fetchandpopulate';
+
 const app = express();
 const port = process.env.PORT || 8080;
-
+const cors = require('cors');
 // Middleware for handling JSON requests
 app.use(express.json());
-
+app.use(cors({
+  origin: ["http://localhost:3000"]
+}));
 // Use the mediaRoutes
 app.use('/api', mediaRoutes);
 

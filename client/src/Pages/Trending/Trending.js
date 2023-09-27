@@ -12,10 +12,10 @@ const Trending = () => {
     //define function to get movie data
     const fetchTrending = async () => {
         const {data} = await axios.get(
-            `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
+            `http://localhost:8080/api/media/movies`
         );
 
-        setContent(data.results);
+        setContent(data);
     }
 
     //actually run the fetching data function
@@ -26,25 +26,25 @@ const Trending = () => {
 
     //movies use 'title', tv-shows use 'name'
     //movies use 'release date', tv-shows use 'first air date'
-    return (  
-    <div>
-        <span className="pageTitle">Trending</span>
-        <div className="trending">
-            {content && content.map((c)=>(
-                <SingleContent
-                    key={c.id}
-                    id={c.id}
-                    poster={c.poster_path}
-                    title={c.title || c.name}
-                    date={c.first_air_date || c.release_date}
-                    media_type={c.media_type}
-                    vote_average={c.vote_average}
-                />
-            ))}
-        </div>
-        <CustomPagination setPage={setPage} />
+   return (
+  <div>
+    <span className="pageTitle">Trending</span>
+    <div className="trending">
+      {content.map((c) => (
+        <SingleContent
+          key={c.id}
+          id={c.id}
+          poster={c.poster_path}
+          title={c.title || c.name}
+          date={c.first_air_date || c.release_date}
+          media_type={c.media_type}
+          vote_average={c.vote_average}
+        />
+      ))}
     </div>
-    );
+    <CustomPagination setPage={setPage} />
+  </div>
+);
 }
  
 export default Trending;
