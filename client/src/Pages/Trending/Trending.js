@@ -12,7 +12,7 @@ const Trending = () => {
     //define function to get movie data
     const fetchTrending = async () => {
         const {data} = await axios.get(
-            `http://localhost:8080/api/media/movies`
+            `http://localhost:8080/api/media`
         );
 
         setContent(data);
