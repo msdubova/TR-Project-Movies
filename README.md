@@ -47,8 +47,10 @@ To run this project locally, you will need to do the following:
 2. Install the dependencies via: `npm install`
 3. create a .env file in the root directory which takes one entry
    - REACT_APP_API_KEY = `YOUR_API_KEY_HERE`
-4. Run the project via: `npm start`
+4. "start-db": "pg_ctl start -D "C:\Program Files\PostgreSQL\15\data"". Please note that running this application requires PostgreSQL to be started beforehand. You can either start it separately or modify    the path to ensure the database starts correctly.
 
+5. In the "server" directory, you will find a file named ".env" This file is used to store configuration variables, including      sensitive information like passwords. PLease fill it with correct data
+6. Run the project via: `npm start`
 
 ## Roadmap
 
